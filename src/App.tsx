@@ -32,11 +32,11 @@ function renderTemplate(template: string, fields: Record<string, string>): strin
 
 const DARK = {
   page: '#06040f', card: '#110e1e', cardBorder: '#2e2a4a', divider: '#1e1a30',
-  heading: '#f0eeff', subtext: '#8a87b0', sectionLabel: '#7c3aed',
+  heading: '#f0eeff', subtext: '#8a87b0', sectionLabel: '#a78bfa',
   labelColor: '#b8b5e0', optionalColor: '#6b6890', badgeBg: '#1e1a3a',
   inputBg: '#13101f', inputBorder: '#2e2a4a', inputText: '#f0eeff',
   previewBg: '#0f0d1a', previewBorder: '#2e2a4a', previewText: '#ddd9ff',
-  placeholderText: '#a78bfa', placeholderBg: '#1e1a3a',
+  placeholderText: '#c4b5fd', placeholderBg: '#1e1a3a',
   resetBorder: '#2e2a4a', resetText: '#9d9abf', resetBg: 'transparent',
   hintText: '#4b4870', toggleBg: '#1e1a3a', toggleBorder: '#3d3a60', toggleText: '#9d9abf',
   dropdownBg: '#13101f', dropdownBorder: '#2e2a4a', dropdownText: '#f0eeff',
@@ -553,9 +553,9 @@ export default function App({ onLogout }: { session: Session; onLogout: () => vo
           {promptType && <SearchableDropdown options={prompts} value={promptTypeId} onChange={id => { setPromptTypeId(id); setCopied(false); setFields({}); }} th={th} />}
           <div style={{ display: 'flex', gap: 8, marginBottom: '1rem' }}>
             <button onClick={() => { setEditing(promptType ?? null); setShowModal(true); }} disabled={!promptType}
-              style={{ fontSize: '0.78rem', fontWeight: 600, padding: '6px 13px', borderRadius: 8, border: `1.5px solid ${th.resetBorder}`, background: th.resetBg, color: !promptType ? th.optionalColor : th.resetText, cursor: !promptType ? 'not-allowed' : 'pointer', opacity: !promptType ? 0.5 : 1 }}>✏️ Edit</button>
+              style={{ fontSize: '0.78rem', fontWeight: 600, padding: '6px 13px', borderRadius: 8, border: `1.5px solid ${th.resetBorder}`, background: th.resetBg, color: !promptType ? th.optionalColor : th.resetText, cursor: !promptType ? 'not-allowed' : 'pointer', opacity: !promptType ? 0.5 : 1 }}>Edit</button>
             <button onClick={() => promptType && setConfirmDelete(promptType.id)} disabled={!promptType}
-              style={{ fontSize: '0.78rem', fontWeight: 600, padding: '6px 13px', borderRadius: 8, border: `1.5px solid ${th.dangerBorder}`, background: th.dangerBg, color: !promptType ? th.optionalColor : th.dangerText, cursor: !promptType ? 'not-allowed' : 'pointer', opacity: !promptType ? 0.5 : 1 }}>🗑️ Delete</button>
+              style={{ fontSize: '0.78rem', fontWeight: 600, padding: '6px 13px', borderRadius: 8, border: `1.5px solid ${th.dangerBorder}`, background: th.dangerBg, color: !promptType ? th.optionalColor : th.dangerText, cursor: !promptType ? 'not-allowed' : 'pointer', opacity: !promptType ? 0.5 : 1 }}>Delete</button>
             <button onClick={() => { setEditing(null); setShowModal(true); }}
               style={{ fontSize: '0.8rem', fontWeight: 700, padding: '7px 14px', borderRadius: 8, border: 'none', background: 'linear-gradient(135deg,#6366f1,#8b5cf6)', color: 'white', cursor: 'pointer', whiteSpace: 'nowrap', boxShadow: '0 0 10px rgba(139,92,246,0.3)', marginLeft: 'auto' }}>
               + New
