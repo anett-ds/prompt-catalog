@@ -1,0 +1,21 @@
+.prompt-preview {
+  border-radius: 10px;
+  border: 1.5px solid var(--preview-border);
+  background: var(--preview-bg);
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  line-height: 1.8;
+  color: var(--preview-text);
+  white-space: pre-wrap;
+  min-height: 80px;
+  overflow: auto;
+
+  &__placeholder {
+    color: var(--placeholder-text);
+    background: var(--placeholder-bg);
+    border-radius: 4px;
+    padding: 1px 4px;
+    font-weight: 700;
+  }
+}

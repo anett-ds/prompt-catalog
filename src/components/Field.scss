@@ -1,0 +1,65 @@
+.field {
+  margin-bottom: 1.1rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--label);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__badge {
+    color: var(--accent-indigo);
+    background: var(--badge-bg);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.62rem;
+  }
+
+  &__optional {
+    color: var(--optional);
+    font-weight: 400;
+    text-transform: none;
+    font-size: 0.72rem;
+    letter-spacing: 0;
+  }
+
+  &__hint-btn {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--placeholder-text);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.7;
+
+    &--clear {
+      color: var(--danger-text);
+    }
+  }
+
+  &__input {
+    padding: 9px 13px;
+    font-size: 0.875rem;
+  }
+
+  &__textarea {
+    font-family: 'Fira Mono', 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    resize: vertical;
+    background: var(--textarea-bg);
+  }
+}

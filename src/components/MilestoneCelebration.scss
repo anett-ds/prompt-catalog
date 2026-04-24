@@ -1,0 +1,43 @@
+.milestone {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  z-index: 200;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+
+  &--visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  &__content {
+    background: linear-gradient(135deg, #1e1a3a, #110e1e);
+    border: 1.5px solid #7c3aed;
+    border-radius: 14px;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 30px rgba(139, 92, 246, 0.4);
+    white-space: nowrap;
+  }
+
+  &__emoji {
+    font-size: 1.6rem;
+  }
+
+  &__count {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #f0eeff;
+    margin-bottom: 1px;
+  }
+
+  &__msg {
+    font-size: 0.7rem;
+    color: #b8b5e0;
+  }
+}

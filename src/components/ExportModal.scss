@@ -1,0 +1,35 @@
+.export-modal {
+  &__description {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    color: var(--description-text);
+  }
+
+  &__textarea {
+    font-family: 'Fira Mono', 'Courier New', monospace;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    resize: vertical;
+    background: var(--textarea-bg);
+    color: var(--preview-text);
+    padding: 10px 13px;
+  }
+
+  &__copy-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 7px 16px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent-gradient);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+    transition: all 0.2s;
+
+    &--copied {
+      background: var(--accent-success-gradient);
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.35);
+    }
+  }
+}

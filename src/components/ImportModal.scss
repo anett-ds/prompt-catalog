@@ -1,0 +1,37 @@
+.import-modal {
+  &__description {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    color: var(--description-text);
+  }
+
+  &__textarea {
+    font-family: 'Fira Mono', 'Courier New', monospace;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    resize: vertical;
+    background: var(--textarea-bg);
+    color: var(--preview-text);
+    padding: 10px 13px;
+
+    &--error {
+      border-color: var(--danger-text);
+
+      &:focus {
+        border-color: var(--danger-text);
+      }
+    }
+  }
+
+  &__error {
+    margin: 6px 0 0;
+    font-size: 0.78rem;
+    color: var(--danger-text);
+  }
+
+  &__success {
+    margin: 6px 0 0;
+    font-size: 0.78rem;
+    color: var(--success);
+  }
+}
