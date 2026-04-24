@@ -3,7 +3,7 @@ import type { Session } from '@supabase/supabase-js';
 import { supabase, rowToPrompt, promptToRow } from './supabase';
 import type { Prompt, FieldDef } from './supabase';
 
-const VERSION = '2.0.0';
+const VERSION = '2.0.1';
 
 const MILESTONES = [
   { count: 1,  msg: "Welcome to the catalog! Your first prompt, copied with care. 🐾" },
