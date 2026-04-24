@@ -1,0 +1,51 @@
+# Secrets and credentials
+
+*.env
+*.env.*
+*.pem
+*.key
+id_rsa*
+id_ed*
+credentials*
+.netrc
+*.secret.*
+
+
+# License files
+
+LICENSE*
+LICENCE*
+COPYING*
+NOTICE*
+
+
+# Config directories that may hold secrets
+
+.config/
+.secrets/
+.credentials/
+.ssh/
+.gnupg/
+
+
+# Build output and generated files
+
+dist/
+.nx/
+tmp/
+coverage/
+*.min.js
+
+
+# Dependencies and lock files
+
+node_modules/
+package-lock.json
+
+
+# IDEs and OS files
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
